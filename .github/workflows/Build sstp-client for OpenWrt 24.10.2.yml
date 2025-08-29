@@ -52,7 +52,7 @@ jobs:
         make package/sstp-client/compile V=s  # V=s для verbose вывода, если нужно отладить
 
     - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: sstp-client-opk
         path: openwrt/bin/packages/*/ramips/packages/*/sstp-client*.ipk
